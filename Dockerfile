@@ -7,4 +7,4 @@
 
 FROM nginx
 
-CMD service start nginx
+COPY . /usr/share/nginx/html
