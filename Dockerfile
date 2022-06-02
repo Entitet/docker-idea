@@ -5,6 +5,6 @@
 # AND ADJUST HE dockerSettings.json FILE
 # FOR YOUR NEEDS!
 FROM node:16-buster
-COPY . /app
-RUN make /app
+# COPY . /app
+# RUN make /app
 CMD ["npm install", "npm start"]
