@@ -2,5 +2,11 @@
   "capital-city-main",
   [
     8080
+  ],
+
+  "capital-city-database",
+  [
+    27017
   ]
+
 ]
