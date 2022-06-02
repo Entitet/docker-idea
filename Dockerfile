@@ -7,4 +7,4 @@
 FROM node:16-buster
 # COPY . /app
 # RUN make /app
-CMD ["npm install", "npm start"]
+CMD ["cd world-map", "npm install", "npm start"]
