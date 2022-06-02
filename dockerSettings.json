@@ -1,10 +1,14 @@
 [
   "capital-city-main",
   [
-    8080
+    8079
   ],
   "world-map-main",
   [
     3000
+  ],
+  "big-picture-main",
+  [
+    8080
   ]
 ]
