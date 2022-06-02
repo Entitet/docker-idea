@@ -2,5 +2,9 @@
   "capital-city-main",
   [
     8080
+  ],
+  "world-map-main",
+  [
+    4001
   ]
 ]
