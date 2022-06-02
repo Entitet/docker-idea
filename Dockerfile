@@ -6,3 +6,5 @@
 # FOR YOUR NEEDS!
 
 # Default port for mongodb is 27017. Starts with mongod.
+FROM mongo:latest
+CMD tail -f /dev/null
