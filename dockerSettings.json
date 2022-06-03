@@ -1,10 +1,10 @@
 [
-  "dev-frontend",
+  "capital-city-main",
   [
-    4001
+    8079
   ],
-  "main-frontend",
+  "capital-city-database",
   [
-    4000
+    27017
   ]
 ]
