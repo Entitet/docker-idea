@@ -1,10 +1,7 @@
 [
-  "dev-frontend",
+  "reverse-proxy",
   [
-    4001
-  ],
-  "main-frontend",
-  [
-    4000
+    9000
   ]
+  
 ]
