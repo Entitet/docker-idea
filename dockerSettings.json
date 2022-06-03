@@ -1,10 +1,7 @@
 [
-  "capital-city-main",
+  "reverse-proxy",
   [
-    8080
-  ],
-  "world-map-main",
-  [
-    3000
+    9000
   ]
+
 ]
