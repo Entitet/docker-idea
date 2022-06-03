@@ -54,8 +54,8 @@ docker run \
 --mount type=bind,source="$DIRNAME/copy-to-docker-container",target=/app \
 -v $REPO_NAME-storage:/storage \
 -e GIT_REPO_URL=$(git remote get-url origin) \
--e GIT_USERNAME=$(git config --global user.name) \
--e GIT_EMAIL=$(git config --global user.email) \
+-e GIT_USERNAME="$(git config --global user.name)" \
+-e GIT_EMAIL="$(git config --global user.email)" \
 -e GIT_REPO_NAME=$REPO_NAME \
 -e GIT_BRANCH_NAME=$BRANCH_NAME \
 $REPO_NAME-git-cloner
