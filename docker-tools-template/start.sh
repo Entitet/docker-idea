@@ -48,7 +48,7 @@ docker volume create $REPO_NAME-storage
 # build image from Dockerfile
 docker build -f git-cloner.Dockerfile -t $REPO_NAME-git-cloner .
 
-### run image as container
+### run the git cloner image as container
 docker run \
 --name $REPO_NAME-git-cloner \
 --mount type=bind,source="$DIRNAME/copy-to-docker-container",target=/app \
@@ -98,7 +98,7 @@ echo ""
 ### that runs docker (mounted as a socket)
 ### and docker and docker compose commands inside it
 ### Run docker compose on dynamically created yml file.
-#
+
 ### Important: We mount a unix socket that makes the Docker CLI
 ### in the container use the Docker daemon on the host...
 ### unix sockets must be written with one start slash in MacOS/Linux
