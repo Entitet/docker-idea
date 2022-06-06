@@ -1,10 +1,33 @@
 [
-  "dev-frontend",
+  "capital-city-main",
+  [
+    8079
+  ],
+
+  "capital-city-database",
+  [
+    27017
+  ],
+
+  "big-picture-main",
+  [
+    8080
+  ],
+  "reverse-proxy",
+  [
+    80
+  ],
+  "world-map-main",
   [
     4001
   ],
-  "main-frontend",
+  "country-info-main",
   [
-    4000
+    4004
+  ],
+  "country-info-database",
+  [
+    4005
   ]
+
 ]
