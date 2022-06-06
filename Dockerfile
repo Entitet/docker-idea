@@ -5,5 +5,5 @@
 # AND ADJUST HE dockerSettings.json FILE
 # FOR YOUR NEEDS!
 FROM node:16-buster
-
+EXPOSE "$PORT"
 CMD npm install && npm run build && npm start
