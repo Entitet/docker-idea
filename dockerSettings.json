@@ -1,6 +1,25 @@
 [
+  "capital-city-main",
+  [
+    8079
+  ],
+
+  "capital-city-database",
+  [
+    27017
+  ],
+
   "big-picture-main",
   [
     8080
+  ],
+  "reverse-proxy",
+  [
+    9000
+  ],
+  "world-map-main",
+  [
+    4001
   ]
+
 ]
