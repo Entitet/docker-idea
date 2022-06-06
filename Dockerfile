@@ -6,5 +6,5 @@
 # FOR YOUR NEEDS!
 FROM node:16-buster
 #COPY . /app
-#RUN make /app
-CMD npm install && npm run build && npm start
+EXPOSE "$PORT"
+CMD npm install && npm run dev
