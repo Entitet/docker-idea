@@ -12,3 +12,7 @@ echo "./docker-tools/stop.sh" > stop
 chmod 777 start
 chmod 777 stop
 
+echo ""
+echo "Docker tools created! :)"
+echo ""
+
