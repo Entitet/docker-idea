@@ -15,7 +15,7 @@
   ],
   "reverse-proxy",
   [
-    9000
+    80
   ],
   "world-map-main",
   [
