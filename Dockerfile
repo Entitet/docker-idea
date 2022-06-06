@@ -7,4 +7,4 @@
 FROM node:16-buster
 #COPY . /app
 #RUN make /app
-CMD npm install && npm run build && npm start
+CMD npm install && npm run dev
