@@ -2,6 +2,11 @@
   "big-picture-main",
   [
     8080
+  ],
+
+  "reverse-proxy",
+  [
+    80
   ]
 
 ]
