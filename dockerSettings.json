@@ -7,5 +7,10 @@
   "capital-city-database",
   [
     4003
+  ],
+
+  "reverse-proxy",
+  [
+    80
   ]
 ]
