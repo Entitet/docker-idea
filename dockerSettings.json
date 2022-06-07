@@ -1,33 +1,7 @@
 [
-  "capital-city-main",
-  [
-    4002
-  ],
-
-  "capital-city-database",
-  [
-    4003
-  ],
-
   "big-picture-main",
   [
     8080
-  ],
-  "reverse-proxy",
-  [
-    80
-  ],
-  "world-map-main",
-  [
-    4001
-  ],
-  "country-info-main",
-  [
-    4004
-  ],
-  "country-info-database",
-  [
-    4005
   ]
 
 ]
