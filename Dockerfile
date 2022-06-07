@@ -5,4 +5,4 @@
 # AND ADJUST HE dockerSettings.json FILE
 # FOR YOUR NEEDS!
 FROM node:16
-CMD npm install && node server
+CMD npm install && npm run dev
