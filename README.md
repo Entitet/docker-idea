@@ -1,23 +1,36 @@
-Hello developer!
+# Project Dockerize
 
-This is a message from your friendly DevOp!
-
-## Exciting times!
 Finally we are moving from a monolith application development model to systems built upon microservices.
 
 This means that we need a new development environment and build system where the teams working in the same main project, but with different services can separate their code and run it on different servers!
 
 For this purpose we have chosen Docker in conjunction with our own setup for automating Docker.
 
-We will start with 
-* different teams in teh same main project having the code for their service in specific branches.
-* your team can create as many branches you want, but you start with branching out the main branch and call your base branch "main-service-name".
-* then you can create dev and feature branches according to the same naming convention (dev-service-name, feature-some-feature-service-name etc).
+This Readme will help you get up and running. Your DevOps-team, that will support you along the way, consists of:
 
-**Note:** Should we need to separate the code further we might move each service into separate repositories. But we will wait with doing that.
+* Mohamed (Msharshar21)
+* Nazir (Naaziir)
+* Oskar (Knuttas)
+* Srikanth (srikanth9065)
+* Mia (Entitet)
 
-## How to get started!
-Checkout the docker branch and run the following command in your terminal:
+## Branching and Docker
+
+This Github-repo is setup to serve you with the containers you need. The **main branch** is used to branch out from when we create a base branch for a Microservice, but other than that you don't need to mind it. The **docker branch** will serve you with the tools you need to run your development environment in containers.
+
+Then we are in familiar territory. Your Microservice has a main branch. Regard this as a traditional main branch for a project and don't merge further than this. From this branch create your dev and feature branches as usual. 
+
+The nameing convention used is: 
+
+*name-of-microservice-main*
+
+*name-of-microservice-dev* 
+
+*name-of-microservice-name-of-feature*
+
+
+## Getting started
+Checkout the **docker branch** and run the following command in your terminal:
 
 ```
 ./create-docker-tools.sh
@@ -36,6 +49,8 @@ This will give you two shell scripts (that are git-ignored and thus available in
 ```
 
 (You will also see a git ignored folder called docker-tools. There is *no need* for you to work in this folder.)
+
+If there have been updates pertaining to the docker tools you need to run ./create-docker-tools.sh 
 
 ## In your branch
 
@@ -112,4 +127,4 @@ Create a separate branch with your Dockerfile (and backup like SQL-dumps etc).
 
 Refer to the documentation about the container you are using (MySQL, MariaDB, MongoDB etc) for how to start the db server on a particular port!
 
-**Important!** If the server/service needs a command line argument rather than an environment variable to set the port it is starting on -  refter to the Docker documentation on how to read environment variables in your Dockerfile and pass them along as comman line arguments in your start CMD!
+**Important!** If the server/service needs a command line argument rather than an environment variable to set the port it is starting on -  refer to the Docker documentation on how to read environment variables in your Dockerfile and pass them along as comman line arguments in your start CMD!
