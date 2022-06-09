@@ -50,7 +50,8 @@ This will give you two shell scripts (that are git-ignored and thus available in
 
 (You will also see a git ignored folder called docker-tools. There is *no need* for you to work in this folder.)
 
-If there have been updates pertaining to the docker tools you need to run ./create-docker-tools.sh 
+If there has been updates pertaining to the docker tools you need to run ```./create-docker-tools.sh``` again.
+
 
 ## In your branch
 
