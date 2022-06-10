@@ -82,17 +82,22 @@ CMD npm install && node index
 **Important:** The above example is very simple as much of what a Dockerfile needs to handle is already handled through the shellscripts. Therefore do not specify a WORK DIR, although most guides about how to write a Dockerfile ask you to. It will be set by the shellscript to where the code for your branch is checked out within Dockers container/named volume systems automatically.
 
 ### How to create a dockerSettings.json file
-The dockerSettings.json should contain info about which branches you want to create containers from (your own one and other branches with services you want to communicate with) and on which port they should be running:
+The dockerSettings.json should contain info about which branches you want to create containers from (your own one and other branches with services you want to communicate with) and on which port they should be running. It's important not to run on the same port as another of our microservices. Here is an example:
 
 ```json
 [
-  "dev-frontend",
+  "exact-branchname-of-your-microservice",
+  [
+    4000
+  ],
+  "exact-branchname-of-your-database",
   [
     4001
   ],
-  "main-frontend",
+
+  "exact-branchname-of-another-microservice",
   [
-    4000
+    4002
   ]
 ]
 ```
@@ -134,4 +139,4 @@ Create a separate branch with your Dockerfile (and backup like SQL-dumps etc).
 
 Refer to the documentation about the container you are using (MySQL, MariaDB, MongoDB etc) for how to start the db server on a particular port!
 
-**Important!** If the server/service needs a command line argument rather than an environment variable to set the port it is starting on -  refer to the Docker documentation on how to read environment variables in your Dockerfile and pass them along as comman line arguments in your start CMD!
+**Important!** If the server/service needs a command line argument rather than an environment variable to set the port it is starting on -  refer to the Docker documentation on how to read environment variables in your Dockerfile and pass them along as command line arguments in your start CMD!
