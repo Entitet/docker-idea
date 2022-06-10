@@ -52,11 +52,20 @@ This will give you two shell scripts (that are git-ignored and thus available in
 
 If there has been updates pertaining to the docker tools you need to run ```./create-docker-tools.sh``` again.
 
+## Do I need to know how to use Docker?
 
-## In your branch
+We recommend you use the tool Docker desktop for easy access to the containers without the need to run specific commands in your terminal. The only specific command we feel you need to know at this stage is: 
+```docker system prune --all```. Running this gives you a clean slate when it comes to everything Docker has been cacheing and is a great first step in troubleshooting.
 
-### Create a Dockerfile
-Make sure there is: A file named **Dockerfile** which specifies at least:
+But this is about it, the scripts mentioned above will handle everything for you.
+
+
+## The setup needed in a branch
+
+In a branch we need to specify what kind of a container we want to be created and for this we need a Dockerfile. The ```./start``` script needs to know which containers you want to be started and on which port the should run and for this a dockerSettings.json file is needed.
+
+### How to create a Dockerfile
+Name the file **Dockerfile**. In this you specify:
 * a base image (FROM) 
 * and a command to run (CMD) when the server starts.
 
@@ -70,9 +79,9 @@ FROM node:16.15-buster
 CMD npm install && node index
 ```
 
-**Important:** - do not specify a WORK DIR. It will be set to where the code for your branch is checked out within Dockers container/named volume systems automatically.
+**Important:** The above example is very simple as much of what a Dockerfile needs to handle is already handled through the shellscripts. Therefore do not specify a WORK DIR, although most guides about how to write a Dockerfile ask you to. It will be set by the shellscript to where the code for your branch is checked out within Dockers container/named volume systems automatically.
 
-### Create a dockerSettings.json file
+### How to create a dockerSettings.json file
 The dockerSettings.json should contain info about which branches you want to create containers from (your own one and other branches with services you want to communicate with) and on which port they should be running:
 
 ```json
@@ -87,9 +96,6 @@ The dockerSettings.json should contain info about which branches you want to cre
   ]
 ]
 ```
-
-**Coming soon:** You will soon be able to add proxy routes for the reverse proxy alongside the port numbers as well!
-
 
 ### Important! Listen to the environment variable PORT when you start your service!
 
