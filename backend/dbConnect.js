@@ -1,7 +1,9 @@
 const path = require('path');
 const mongoose = require('mongoose');
 
-//const connection = 'mongodb://capital-info-db-main:8020/capitals-db';
+// To configure the connection you need to enter the branch name for your database
+// and the port specified in dockerSettings.json. Currently the database is located in
+// the branch capital-city-database and runs on port 4003.
 const connection = 'mongodb://capital-city-database:4003/capitals-db';
 
 function dbConnectWithRetry() {
