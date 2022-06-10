@@ -5,3 +5,6 @@ Your container is modeled to run Node.js/Express backend and React with Vite as 
 If you would like to see how your Microservice behaves in the current version 18 you could create a feature-branch and change the tag in the Dockerfile. This is the wonderful simplicity containers give you, enjoy!
 
 You have requested that your code is started with the command **npm run dev**, to enable you to see changes made in the code in real time (well, after a reload of the page) on the screen. Don't forget to alert your DevOps team if you wish this to be changed!
+
+## Your database
+A rule of thumb for Docker is that a container should do one thing and do it well. Therefore your database runs in a different container. As a container in this setup of Github + Docker equals a branch you will find it in the branch **capital-city-database**. (It has its own Readme with more info.)
