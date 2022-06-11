@@ -50,6 +50,8 @@ This will give you two shell scripts (that are git-ignored and thus available in
 
 (You will also see a git ignored folder called docker-tools. There is *no need* for you to work in this folder.)
 
+The first time you run ```./start``` it will fail. Scroll through the output in your teminal and you'll find an SSH-key and instructions how to proceed. The script will continue failing until you've added the generated SSH-key to your Github account.
+
 If there has been updates pertaining to the docker tools you need to run ```./create-docker-tools.sh``` again.
 
 ## Do I need to know how to use Docker?
